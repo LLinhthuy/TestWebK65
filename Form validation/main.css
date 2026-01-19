@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+/* Không chỉnh sửa bất kì đoạn code nào ở trên */
+/* Code từ đây */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+body > .reg-form {
+    margin: auto;
+    width: 380px;
+}
+
+.reg-form {
+	background-color: rgb(253, 218, 224);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(172, 166, 166);
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.heading, .main {
+    margin: 30px 30px 0 30px;
+    color:  #9e2870;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#input__name , #input__email, #input__password, #input__password-again, #province {
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #4e1c53;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+}
+
+#input__name:hover , #input__email:hover, #input__password:hover, #input__password-again:hover, #province:hover {
+    border-color: #df117f;
+}
+
+#input__name:focus , #input__email:focus, #input__password:focus, #input__password-again:focus,  #province:focus {
+    outline-color:#df117f;
+}
+
+.form-submit {
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    margin: 15px auto;
+    border: none;
+    background-color: #9e2870;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-submit:hover {
+    background-color: #6100fe;
+}
+ .invalid > #input__name {
+    border-color: red;
+}
+.invalid > #input__password {
+    border-color: red;
+}
+.invalid > #input__email {
+    border-color: red;
+}
+.invalid > #input__password-again {
+    border-color: red;
+}
+.invalid > #province {
+    border-color: red;
+}
+
+.invalid > .form-message {
+    color: red;
+}
+
+input[name="gender"]:checked {
+    
+}
